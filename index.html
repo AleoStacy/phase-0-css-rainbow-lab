@@ -1,27 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  <head><!-- where all the meta data will go, like and files we need to include -->
-    <title>My Little Rainbow</title><!-- the title is what appears on your tab -->
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>My Little Rainbow</title>
+    <style>
+        /* Adding some simple rainbow styling */
+        .grandparent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .child {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(to right, #f00, #ffa500, #ff0, #00bc3f, #06f, #8a2be2, #d300c9);
+            border-radius: 50%;
+        }
+    </style>
+</head>
 
-  <body><!-- the body element is where everything we will see on the page will go -->
-
-    <!-- our soon to be beautiful rainbow! -->
-    <div> <!-- the grandest grandparent div -->
-      <div>
-        <div>
-          <div>
-            <div>
-              <div>
-                <div></div> <!-- the grandest child div -->
-              </div>
-            </div>
-          </div>
+<body>
+    <!-- A beautiful rainbow inside a circle -->
+    <div class="grandparent"> <!-- Grandparent div -->
+        <div class="child"> <!-- The rainbow div -->
         </div>
-      </div>
     </div>
 
-  </body>
+</body>
 
 </html>
